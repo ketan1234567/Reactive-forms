@@ -1,0 +1,14 @@
+<h3>Product Screen</h3>
+<div class="mat-elevation-z8">
+    <div>
+        <a mat-raised-button color="primary" routerLink="craete" style="margin:2%">Create New</a>
+    </div>
+    <table class="mat-elevation-z8" mat-table  matSort [dataSource]="productdata">
+        <ng-container matColumnDef="code">
+            <th mat-header-cell *matHedaerCellDef mat-sort-header>code</th>
+            <td mat-cell *matCellDef="let element">{{element.code}}</td>
+        </ng-container>
+
+    </table>
+
+</div>
